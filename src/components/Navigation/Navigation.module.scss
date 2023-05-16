@@ -26,10 +26,10 @@
       color: black;
       transition: 200ms ease-in-out;
       &:hover {
-        color: orange;
+        color: $orange;
       }
       &.active {
-        color: green;
+        color: $orange;
       }
     }
     ul {
