@@ -19,7 +19,6 @@ const Caraousel = () => {
 
   return (
     <section className={classes.slider}>
-
     <Slider {...settings} className={classes.caraousel}>
       <img src={caraousel1} alt="caraousel item" />
       <img src={caraousel2} alt="caraousel item" />

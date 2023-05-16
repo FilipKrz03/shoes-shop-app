@@ -1,35 +1,45 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
-.header{
-    width: 100vw;
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: flex;
-    background-color: white;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: $font-l;
-    padding:0em 2.5em;
-    box-shadow:
-    rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+.header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $font-l;
+  padding: 0em 2.5em;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    img{
-        width: 120px;
-        cursor: pointer;
-    }
+  img {
+    width: 120px;
+    cursor: pointer;
+  }
 
-    nav{
-        ul{
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            list-style: none;
-            li{
-                cursor: pointer;
-            }
-        }
+  nav {
+    a {
+      text-decoration: none;
+      color: black;
+      transition: 200ms ease-in-out;
+      &:hover {
+        color: orange;
+      }
+      &.active {
+        color: green;
+      }
     }
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      list-style: none;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
 }
