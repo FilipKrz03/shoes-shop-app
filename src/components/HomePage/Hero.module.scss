@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.hero {
+    height: 70vh;
+    padding: 0rem 3.5em;
+    background-color: $black;
+    color : $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .description{
+        max-width: 40vw;
+        h2{
+            font-size: $font-xl;
+        }
+    }
+}
