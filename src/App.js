@@ -1,13 +1,13 @@
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import MainNavigation from './pages/MainNavigation';
-import ProductPage from './pages/ProductsPage';
+import ProductPage , {loader as productsLoader} from './pages/ProductsPage';
 
 const router = createBrowserRouter([
 {path : '/' , element:<MainNavigation /> , 
 children : [
   {index : true , element:<HomePage />} ,
-  {path : 'products'  , element : <ProductPage />}
+  {path : 'products'  , element : <ProductPage />  , loader:productsLoader , }
 ]}
 ])
 
