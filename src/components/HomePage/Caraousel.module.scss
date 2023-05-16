@@ -2,7 +2,8 @@
 
 
 .slider {
-background-color: #98c1d9ab;
+/* background-color: #98c1d9ab; */
+background-color: #fefae082;
 padding-bottom: 25px;
 p{
     text-align: center;
@@ -12,12 +13,12 @@ p{
     color: black;
 }
 .caraousel{
-    width: 85vw;
+    width: 62vw;
     margin: 0px auto;
-    padding-top: 20px;
+    padding-top: 30px;
     
     img{
-        height: 400px;
+        height: 330px;
         cursor: pointer;
     }
 }

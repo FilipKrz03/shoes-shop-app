@@ -3,17 +3,21 @@
 .hero {
     height: 70vh;
     padding: 0rem 3.5em;
-    background-color: $black;
-    color : $white;
+    background-color: $white;
+    color : $black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     .description{
         max-width: 40vw;
         h2{
             font-size: $font-xl;
         }
+    }
+    img{
+        width: 600px;
     }
 }
