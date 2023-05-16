@@ -1,14 +1,29 @@
 import { useLoaderData } from "react-router-dom";
 import classes from './ProductsList.module.scss';
+import ProductItem from "./ProductItem";
 
 const ProductsList = () => {
     
-    const data = useLoaderData();
-    console.log(data);
+    const productsData = useLoaderData();
+
+
+    const products = productsData.map(product => {
+        return (
+            <ProductItem
+            id = {product.id}
+            key = {product.id}
+            img = {product.img}
+            price = {product.price}
+            title = {product.title}
+            />
+        );
+    });
 
     return(
-        <h2>Products List</h2>
-    )
+        <div className={classes.list}>
+        {products}
+        </div>
+    );
 }
 
 export default ProductsList;
