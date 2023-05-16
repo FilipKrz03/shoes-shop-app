@@ -1,7 +1,12 @@
 @import '../../variables.scss';
 
 .header{
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
+    background-color: white;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
