@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid #d3d3d3;
+    width: 800px;
+    padding: 1em;
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: $font-l;
+            font-weight: bolder;
+        }
+        span{
+            font-weight: bolder;
+        }
+    }
+
+    .quantity{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &-changer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:8px;
+            .remove{
+                color: red;
+                cursor: pointer;
+            }
+            .add{
+                color: green;
+                cursor: pointer;
+            }
+            span{
+                font-size: $font-l;
+            }
+        }
+    }
+    
+}

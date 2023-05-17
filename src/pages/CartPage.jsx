@@ -1,6 +1,7 @@
+import Cart from "../components/CartPage/Cart";
 const CartPage = () => {
 return(
-    <h1>Cart</h1>
+    <Cart />
 )
 }
 

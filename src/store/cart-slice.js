@@ -7,8 +7,19 @@ const cartSlice = createSlice({
         totalQuantity : 0 , 
     } , 
     reducers : {
-        addItem(){
-
+        addItem(state , action){
+            state.totalQuantity++;
+            const areShoesInArray = state.items.find(item => item.id === action.payload.id);
+            if(areShoesInArray){
+            areShoesInArray.itemQuantity++;
+            }
+            else {
+                const shoeObj = {
+                    ...action.payload , 
+                    itemQuantity : 1 , 
+                }
+                state.items.push(shoeObj);
+            }
         }   , 
         removeItem () {
 
