@@ -1,4 +1,5 @@
 import { NavLink , useNavigation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { CircularProgress } from "@mui/material";
 import classes from "./Navigation.module.scss";
 import mainLogo from "../../img/main-logo.png";
@@ -7,6 +8,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 const Navigation = () => {
 
   const navigation = useNavigation();
+  const itemsQuantity = useSelector(state => state.cart.totalQuantity);
 
 
   return (
@@ -45,7 +47,7 @@ const Navigation = () => {
           }>
             <ShoppingCartIcon fontSize="large" className={classes.icon} />
             </NavLink>
-            <div className={classes.quantity}>3</div>
+            <div className={classes.quantity}>{itemsQuantity}</div>
           </li>
         </ul>
       </nav>
