@@ -3,9 +3,9 @@ import classes from './ProductItem.module.scss';
 const ProductItem = (props) => {
 return(
     <div className={classes.item}>
-        <h1>{props.title}</h1>
-        <img src={props.img} alt='shoes pic' />
-        <p>{props.price}</p>
+         <img src={props.img} alt='shoes pic' />
+        <p>{props.title}</p>
+        <p className={classes.price}>${props.price}</p>
     </div>
 )
 }

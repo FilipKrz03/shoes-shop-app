@@ -20,9 +20,16 @@ const ProductsList = () => {
     });
 
     return(
+        <>
+        <div className={classes.description}>
+        <p> <span>Sneakers </span>
+Every sneaker you want is always available and verified by our store.
+ Buy and sell new sneakers & shoes from Air Jordan, adidas, Nike, Yeezy and more!</p>
+        </div>
         <div className={classes.list}>
         {products}
         </div>
+        </>
     );
 }
 

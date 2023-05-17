@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    width: 270px;
+    height: 200px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+
+    img{
+        width: 100px;
+    }
+
+    .price{
+        font-size: $font-l;
+    }
+}
