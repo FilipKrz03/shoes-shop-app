@@ -39,6 +39,19 @@
       list-style: none;
       li {
         cursor: pointer;
+          .icon{
+            position: relative;
+          }
+          .quantity{
+            position: absolute;
+            top: 0;
+            right: 50px;
+            background-color: $orange;
+            border-radius: 50px;
+            padding: 3px;
+            font-size: $font-s;
+            font-weight: bolder;
+          }
       }
     }
   }

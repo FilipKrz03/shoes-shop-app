@@ -37,7 +37,8 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <ShoppingCartIcon fontSize="large" />
+            <ShoppingCartIcon fontSize="large" className={classes.icon} />
+            <div className={classes.quantity}>3</div>
           </li>
         </ul>
       </nav>
