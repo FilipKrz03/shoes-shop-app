@@ -22,6 +22,7 @@ const Navigation = () => {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              end
             >
               Home
             </NavLink>
@@ -37,7 +38,13 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink
+            to = {'/cart'}
+            className={({ isActive }) =>
+            isActive ? classes.active : undefined
+          }>
             <ShoppingCartIcon fontSize="large" className={classes.icon} />
+            </NavLink>
             <div className={classes.quantity}>3</div>
           </li>
         </ul>
