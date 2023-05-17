@@ -1,12 +1,8 @@
-import { useLoaderData } from "react-router-dom";
 import classes from './ProductsList.module.scss';
 import ProductItem from "./ProductItem";
 
-const ProductsList = () => {
-    
-    const productsData = useLoaderData();
-
-
+const ProductsList = ({productsData}) => {
+     
     const products = productsData.map(product => {
         return (
             <ProductItem

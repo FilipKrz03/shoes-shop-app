@@ -1,10 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink , useNavigation } from "react-router-dom";
+import { CircularProgress } from "@mui/material";
 import classes from "./Navigation.module.scss";
 import mainLogo from "../../img/main-logo.png";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const Navigation = () => {
+
+  const navigation = useNavigation();
+
+
   return (
+    <>
+    {navigation.state === 'loading' && <CircularProgress className={classes.loading} /> }
     <header className={classes.header}>
       <img src={mainLogo} alt="main logo of site" />
       <nav>
@@ -35,6 +42,7 @@ const Navigation = () => {
         </ul>
       </nav>
     </header>
+    </>
   );
 };
 

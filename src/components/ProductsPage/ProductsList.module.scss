@@ -1,23 +1,22 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
-.list{
-  margin-top: 30px;  
+.list {
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   row-gap: 30px;
-  
 }
 
-.description{
-    width: 80vw;
-    margin: 20px auto;
-    background-color: lightgrey;
-    font-size: $font-l;
-    padding: 3rem;
-    p{
-        span{
-            font-size: $font-xl;
-        }
+.description {
+  width: 80vw;
+  margin: 20px auto;
+  background-color: lightgrey;
+  font-size: $font-l;
+  padding: 3rem;
+  p {
+    span {
+      font-size: $font-xl;
     }
+  }
 }
