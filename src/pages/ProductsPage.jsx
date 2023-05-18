@@ -1,10 +1,17 @@
 import { json, useLoaderData } from "react-router-dom";
 import ProductsList from "../components/ProductsPage/ProductsList";
+import './animations.scss'
 
 const ProductPage = () => {
   const productsData = useLoaderData();
-  return <ProductsList productsData={productsData} />;
+
+  return(
+    <div className="appear-right">
+   <ProductsList productsData={productsData} />
+   </div>
+  )
 };
+
 
 export default ProductPage;
 

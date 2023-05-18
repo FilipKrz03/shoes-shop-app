@@ -1,10 +1,15 @@
 import { useLoaderData, json } from "react-router-dom";
 import ProductDetail from "../components/ProductDetailPage/ProductDetail";
+import './animations.scss'
 
 const ProductDetailPage = () => {
   const details = useLoaderData();
 
-  return <ProductDetail details={details} />;
+  return (
+    <div className="appear">
+  <ProductDetail details={details} />
+  </div>
+  )
 };
 
 export default ProductDetailPage;

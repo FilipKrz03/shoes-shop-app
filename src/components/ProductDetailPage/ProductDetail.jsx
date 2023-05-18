@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../store/cart-slice';
 import classes from './ProductDetail.module.scss';
@@ -7,6 +7,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const ProductDetail = ({details}) => {
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const addHandler = () => {
         const itemObj = {
@@ -16,6 +17,7 @@ const ProductDetail = ({details}) => {
             img : details.img , 
         }
         dispatch(cartActions.addItem(itemObj));
+        navigate('/products');
     }
 
     return(

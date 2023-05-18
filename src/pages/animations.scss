@@ -1,0 +1,49 @@
+.appear-left {
+  animation: appear-left 0.7s ease-in-out;
+}
+.appear-right {
+  animation: appear-right 0.7s ease-in-out;
+}
+.appear-top {
+  animation: appear-top 0.5s ease-in-out;
+}
+
+.appear {
+  animation: appear 0.7s ease-in-out;
+}
+
+@keyframes appear-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appear-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appear-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
