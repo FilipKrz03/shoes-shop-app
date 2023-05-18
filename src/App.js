@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useSelector , useDispatch } from "react-redux";
 import HomePage from "./pages/HomePage";
@@ -10,7 +10,7 @@ import CartPage from "./pages/CartPage";
 import { saveCartData , getCartData } from "./store/cart-actions";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <MainNavigation />,
