@@ -4,4 +4,35 @@ $font-xl:45px;
 $black: #212529;
 $white : #f8f9fa;
 $orange : #fb8500;
-$border-radius:25px
+$border-radius:25px;
+
+@mixin media-xl{
+    @media(max-width:1200px){
+        @content;
+    }
+}
+
+@mixin media-l{
+    @media(max-width:890px){
+        @content;
+    }
+}
+
+@mixin media-m{
+    @media(max-width:600px){
+        @content;
+    }
+}
+
+@mixin media-s{
+    @media(max-width:320px){
+        @content;
+    }
+}
+
+@mixin media-nav{
+    @media(max-width:500px){
+        @content;
+    }
+}
+

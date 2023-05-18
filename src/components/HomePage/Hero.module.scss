@@ -1,23 +1,52 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .hero {
-    height: 70vh;
-    padding: 0rem 3.5em;
-    background-color: $white;
-    color : $black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 70vh;
+  padding: 0rem 3.5em;
+  background-color: $white;
+  color: $black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
-    .description{
-        max-width: 40vw;
-        h2{
-            font-size: $font-xl;
-        }
+  .description {
+    max-width: 40vw;
+    h2 {
+      font-size: $font-xl;
     }
-    img{
-        width: 600px;
+  }
+  img {
+    width: 600px;
+  }
+}
+
+@include media-l {
+  .hero {
+    height: auto;
+    padding: 0rem 1em;
+    padding-bottom: 20px;
+    .description {
+      width: 60vw;
+    }
+    img {
+      width: 40vw;
+    }
+  }
+}
+
+@include media-m{
+    .hero{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 60vw;
+        }
+        .description{
+           max-width: 90vw;
+           width: 90vw;
+        }
     }
 }

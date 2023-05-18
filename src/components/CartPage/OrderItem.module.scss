@@ -54,3 +54,15 @@
     }
     
 }
+
+@include media-l{
+    .item{
+        width: 95vw;
+    }
+}
+
+@include media-m{
+    .item{
+        flex-direction: column;
+    }
+}

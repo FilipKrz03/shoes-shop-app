@@ -15,7 +15,7 @@ const Navigation = () => {
     <>
     {navigation.state === 'loading' && <CircularProgress className={classes.loading} /> }
     <header className={classes.header}>
-      <img src={mainLogo} alt="main logo of site" />
+    <NavLink to = '/'>  <img src={mainLogo} alt="main logo of site" /> </NavLink>
       <nav>
         <ul>
           <li>

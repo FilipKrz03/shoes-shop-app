@@ -2,6 +2,7 @@
 
 .list {
   margin-top: 30px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
@@ -18,5 +19,31 @@
     span {
       font-size: $font-xl;
     }
+  }
+}
+
+@include media-xl{
+  .list{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@include media-l{
+  .list{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@include media-m{
+  .list{
+    grid-template-columns:repeat(1,1fr);
+  }
+}
+
+@include media-s{
+  .description{
+    width: 90vw;
+    padding: 1rem;
+    text-align: center;
   }
 }

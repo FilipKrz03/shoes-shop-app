@@ -62,3 +62,41 @@
   top: 25%;
   left: 50%;
 }
+
+@include media-nav{
+  .header{
+    padding: 0em 0.1em;
+    font-size: 16px;
+    nav{
+      ul{
+        gap: 15px;
+        li{
+          .quantity{
+            right: 5px;
+            padding: 2px;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+@include media-s{
+  .header{
+    padding: 10px 5px;
+    img{
+      width: 85px;
+    }
+      nav{
+        ul{
+          gap: 12px;
+          li{
+            .quantity{
+              top: 1px;
+            }
+          }
+        }
+      }
+  }
+}

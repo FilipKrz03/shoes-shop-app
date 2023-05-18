@@ -1,24 +1,46 @@
-@import '../../variables.scss';
-
+@import "../../variables.scss";
 
 .slider {
-background-color: #98c1d9ab; 
-padding-bottom: 25px;
-p{
+  background-color: #98c1d9ab;
+  padding-bottom: 25px;
+  p {
     text-align: center;
     padding-top: 15px;
-    font-size:$font-xl;
+    font-size: $font-xl;
     font-weight: 500;
     color: black;
-}
-.caraousel{
+  }
+  .caraousel {
     width: 90vw;
     margin: 0px auto;
     padding-top: 30px;
-    
-    img{
-        height: 430px;
-        cursor: pointer;
+
+    img {
+      height: 430px;
+      cursor: pointer;
     }
+  }
 }
+
+@include media-l {
+  .slider {
+    .caraousel {
+      width: 85vw;
+      img{
+        height: 70vw;
+      }
+    }
+  }
+  
+}
+
+@include media-m {
+  .slider {
+    .caraousel {
+      width: 80vw;
+      img{
+        height: 70vw;
+      }
+    }
+  }
 }

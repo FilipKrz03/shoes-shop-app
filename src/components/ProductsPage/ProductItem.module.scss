@@ -19,3 +19,9 @@
         font-size: $font-l;
     }
 }
+
+@include media-s{
+    .item{
+        width: 90vw;
+    }
+}
