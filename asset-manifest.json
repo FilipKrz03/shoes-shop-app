@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shoes-shop-app/static/css/main.2aa934ca.css",
-    "main.js": "/shoes-shop-app/static/js/main.fd38956d.js",
+    "main.js": "/shoes-shop-app/static/js/main.81d18476.js",
     "static/media/caraousel-3.jpg": "/shoes-shop-app/static/media/caraousel-3.307d5a723e77fe9d6940.jpg",
     "static/media/caraousel-1.jpg": "/shoes-shop-app/static/media/caraousel-1.0c0523f14ed6ab44b56b.jpg",
     "static/media/caraousel-2.jpg": "/shoes-shop-app/static/media/caraousel-2.845d347e141278e6c2b0.jpg",
@@ -13,10 +13,10 @@
     "static/media/slick.woff": "/shoes-shop-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shoes-shop-app/index.html",
     "main.2aa934ca.css.map": "/shoes-shop-app/static/css/main.2aa934ca.css.map",
-    "main.fd38956d.js.map": "/shoes-shop-app/static/js/main.fd38956d.js.map"
+    "main.81d18476.js.map": "/shoes-shop-app/static/js/main.81d18476.js.map"
   },
   "entrypoints": [
     "static/css/main.2aa934ca.css",
-    "static/js/main.fd38956d.js"
+    "static/js/main.81d18476.js"
   ]
 }
