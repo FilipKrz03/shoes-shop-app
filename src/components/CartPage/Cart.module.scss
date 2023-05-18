@@ -1,6 +1,15 @@
+@import '../../variables.scss';
+
 .cart{
+    text-align: center;
+
     h1{
-        text-align: center;
         margin: 30px 0px;
+    }
+
+    .price{
+        margin-top: 20px;
+        font-size: $font-l;
+        font-weight: bolder;
     }
 }
