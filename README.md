@@ -1,6 +1,19 @@
 # Getting Started with Create React App
 live : https://filipkrz03.github.io/shoes-shop-app/
 
+## Tech : 
+React , Redux , React router , scss , Material UI
+
+## Functionalities : 
+Add product to cart , 
+Cart products actions,
+Evrything saves in local storage
+
+## Few words about :
+Data is fetching from server (firebase database)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
