@@ -21,9 +21,28 @@ const cartSlice = createSlice({
                 state.items.push(shoeObj);
             }
         }   , 
-        removeItem () {
+        addExistingItem(state , action){
+            state.totalQuantity++;
+            const item = state.items.find(item => item.id === action.payload);
+            item.itemQuantity++;
+        } , 
+        removeItem (state , action) {
+            state.totalQuantity--;
+            const item = state.items.find(item => item.id === action.payload);
+            if(item.itemQuantity === 1){
+              const newItems =  state.items.filter(item => item.id !== action.payload);
+              state.items = newItems;
+            }
+            else {
+                item.itemQuantity--;
+            }
 
-        }   
+        }  , 
+        removeAllItems(state , action){
+            const item = state.items.find(item => item.id === action.payload);
+            state.totalQuantity -= item.itemQuantity;
+            state.items = state.items.filter(item => item.id !== action.payload);
+        }  
     }
 })
 
