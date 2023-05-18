@@ -9,11 +9,11 @@ export const saveCartData = (data) => {
 
 export const getCartData = () => {
     return(dispatch) => {
-        const cartData = JSON.parse(localStorage.getItem('cartData'));
+        const cartData = JSON.parse(localStorage.getItem('cartData')) || [];
         const cartObj = {
-            items : cartData.items , 
-            totalQuantity : cartData.totalQuantity , 
-            totalPrice : cartData.totalPrice , 
+            items : cartData.items || [], 
+            totalQuantity : cartData.totalQuantity || 0 , 
+            totalPrice : cartData.totalPrice  || 0, 
         }
         dispatch(cartActions.loadCartData(cartObj));
     }

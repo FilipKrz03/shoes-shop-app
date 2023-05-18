@@ -1,5 +1,5 @@
 import { RouterProvider, createHashRouter } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSelector , useDispatch } from "react-redux";
 import HomePage from "./pages/HomePage";
 import MainNavigation from "./pages/MainNavigation";
@@ -24,25 +24,30 @@ const router = createHashRouter([
   },
 ]);
 
-function App() {
+let isInitial = true;
 
-  const [isInitial , setIsInitial] = useState(true); 
+function App() {
+ 
   const cartData = useSelector(state => state.cart);
   const dispatch = useDispatch();
  
+
+
+  useEffect(()=>{
+    dispatch(getCartData());
+  }, [dispatch]);
+
+
   useEffect(()=>{
     if(isInitial){
-      setIsInitial(false);
+    isInitial = false;
       return;
     }
     if(!isInitial){
     dispatch(saveCartData(cartData))
     }
-  }, [cartData , dispatch , isInitial]);
+  }, [cartData , dispatch ,]);
 
-  useEffect(()=>{
-    dispatch(getCartData());
-  }, [dispatch]);
 
   return <RouterProvider router={router} />;
 }
